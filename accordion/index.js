@@ -5,10 +5,11 @@ accordionEls.forEach((accordion) => {
     e.target.classList.toggle("active");
 
     let panel = e.target.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+
+    if (panel.style.height) {
+      panel.style.height = null;
     } else {
-      panel.style.display = "block";
+      panel.style.height = panel.scrollHeight + "px";
     }
   });
 });
