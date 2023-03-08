@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+}
+
+.tablink-container {
+  flex-basis: 30%;
+  background-color: #efefef;
+}
+
+div.tablink {
+  padding: 10px;
+}
+
+div.tablink:hover {
+  background-color: #ccc;
+}
+
+.tabcontent-container {
+  flex-basis: 70%;
+  padding: 8px;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+.tablink.active {
+  background-color: #ccc;
+}
